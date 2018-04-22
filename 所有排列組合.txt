@@ -1,0 +1,42 @@
+1	輸入2時		3	輸入3時		7	輸入4時		15	輸入5時		31	輸入6時
+a	b		a	bc		a	bcd		a	bcde		a	
+~~b~~	~~a~~		b	ac		b	acd		b	acde		b	
+			c	ab		c	abd		c	abde		c	
+						d	abc		d	abce		d	
+						ab	cd		e	adcd		e	
+						ac	bd		ab	cde		f	
+						ad	bc		ac	bde		ab	
+						~~bc~~	~~ad~~		ad	bce		ac	
+						~~bd~~	~~ac~~		ae	bcd		ad	
+						~~cd~~	~~ab~~		bc	ade		ae	
+									bd	ace		af	
+									be	acd		bc	
+									cd	abe		bd	
+									ce	abd		be	
+									de	abc		bf	
+												cd	
+												ce	
+												cf	
+												de	
+												df	
+												ef	
+												abc	
+												abd	
+												abe	
+												abf	
+												acd	
+												ace	
+												acf	
+												ade	
+												adf	
+												aef	
+												~~bcd~~	
+												~~bce~~	
+												~~bcf~~	
+												~~bde~~	
+												~~bdf~~	
+												~~bef~~	
+												~~cde~~	
+												~~cdf~~	
+												~~cef~~	
+												~~def~~	
