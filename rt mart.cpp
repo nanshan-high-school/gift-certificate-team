@@ -1,6 +1,6 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
-//product???賊?????潦otal?嗾蝔格??????ank????瘜?
 int main(){
 	cout << "How many product are you going to buy in RT-Mart?";
 	int product;
@@ -10,6 +10,8 @@ int main(){
 		cout << "The NO." << t + 1 << "product price?";
 		cin >> p[t]; 
 	}
+	int rankT = prw(2,product)
+	
 	
 	
 
