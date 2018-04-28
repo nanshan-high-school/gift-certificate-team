@@ -34,27 +34,28 @@ int main(){
 	}
 	int refound[rankT];
 	for(int t = 0 ; t < rankT ; t ++){
-		refound[t] = A[t] % 100 + B[t] % 100;
+		refound[t] = (100 - (A[t] % 100)) + (100 - (B[t] % 100));
 	}
 	int most = 0, mostR = 0;
 	for(int t = 0 ; t < rankT ; t ++){
 		if(refound[t] > mostR){
 			most = t;
+			mostR = refound[t];
 		}
 	}
-	cout << "A should buy ";
+	cout << "\nA should buy ";
 	for(int t = 0 ; t < product ; t ++){
 	 	if (rank[most][t] == 1){
 	 		cout << "No." << t + 1 << " ";
 		}
 	}
-	cout << "product(s).\nB should buy ";
+	cout << "product(s).\nHe(She) will get $" << 100 - (A[most] % 100) << " for refound.\nB should buy ";
 	for(int t = 0 ; t < product ; t ++){
 	 	if (rank[most][t] == 0){
 	 		cout << "No." << t + 1 << " ";
 		}
 	}
-	cout << "product(s).";
+	cout << "product(s).\nHe(She) will get $" << 100 - (B[most] % 100) << " for refound.\nThe total cash refound is $" << mostR << ".";
 	system("Pause");
 	return 0;
 }
