@@ -59,13 +59,13 @@ int main(){
 	 		cout << "No." << t + 1 << " ";
 		}
 	}
-	cout << "product(s).\nHe(She) will get $" << 100 - (A[most] % 100) << " for refound.\nB should buy ";
+	cout << "product(s).\nHe(She) will get $" << refoundA[most] << " for refound.\nB should buy ";
 	for(int t = 0 ; t < product ; t ++){
 	 	if (rank[most][t] == 0){
 	 		cout << "No." << t + 1 << " ";
 		}
 	}
-	cout << "product(s).\nHe(She) will get $" << 100 - (B[most] % 100) << " for refound.\nThe total cash refound is $" << mostR << ".";
+	cout << "product(s).\nHe(She) will get $" << refoundB[most] << " for refound.\nThe total cash refound is $" << mostR << ".";
 	system("Pause");
 	return 0;
 }
