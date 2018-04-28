@@ -32,9 +32,19 @@ int main(){
 			}
 		}
 	}
-	int refound[rankT];
+	int refound[rankT], refoundA[rankT], refoundB[rankT];
 	for(int t = 0 ; t < rankT ; t ++){
-		refound[t] = (100 - (A[t] % 100)) + (100 - (B[t] % 100));
+		refoundA[t] = 100 - (A[t] % 100);
+		refoundB[t] = 100 - (B[t] % 100);
+		if(refoundA[t] == 100){
+			refoundA[t] = 0;
+		}
+		if(refoundB[t] == 100){
+			refoundB[t] = 0;
+		}
+	}
+	for(int t = 0 ; t < rankT ; t ++){
+		refound[t] = refoundA[t] + refoundB[t];
 	}
 	int most = 0, mostR = 0;
 	for(int t = 0 ; t < rankT ; t ++){
