@@ -1,3 +1,4 @@
+//OK
 #include<iostream>
 #include<math.h>
 using namespace std;
@@ -7,7 +8,7 @@ int main(){
 	cin >> product;
 	int p[product];
 	for(int t = 0 ; t < product ; t++){
-		cout << "What is the NO." << t + 1 << " product price?";
+		cout << "What is the proce of NO." << t + 1 << " ?";
 		cin >> p[t]; 
 	}
 	int rankT = pow(2,product);
@@ -59,13 +60,13 @@ int main(){
 	 		cout << "No." << t + 1 << " ";
 		}
 	}
-	cout << "product(s).\nHe(She) will get $" << refoundA[most] << " for refound.\nB should buy ";
+	cout << "product.\nHe(She) will get $" << refoundA[most] << " for refound.\nB should buy ";
 	for(int t = 0 ; t < product ; t ++){
 	 	if (rank[most][t] == 0){
 	 		cout << "No." << t + 1 << " ";
 		}
 	}
-	cout << "product(s).\nHe(She) will get $" << refoundB[most] << " for refound.\nThe total cash refound is $" << mostR << ".";
+	cout << "product.\nHe(She) will get $" << refoundB[most] << " for refound.\nThe total cash refound is $" << mostR << ".";
 	system("Pause");
 	return 0;
 }
