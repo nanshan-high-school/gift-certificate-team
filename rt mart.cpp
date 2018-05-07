@@ -8,7 +8,7 @@ int main(){
 	cin >> product;
 	int p[product];
 	for(int t = 0 ; t < product ; t++){
-		cout << "What is the proce of NO." << t + 1 << " ?";
+		cout << "What is the price of NO." << t + 1 << " ?";
 		cin >> p[t]; 
 	}
 	int rankT = pow(2,product);
